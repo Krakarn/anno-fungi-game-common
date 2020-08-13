@@ -1,7 +1,9 @@
 import { Message, ProcessMessageMap, ProcessMessage } from './message';
 
 export type UpdateStateClientMessage =
-  Message<'update-state'>
+  Message<'update-state', {
+    state: any;
+  }>
 ;
 
 export type CreateGameClientMessage =
